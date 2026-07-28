@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
-import portraitImage from '../assets/images/maria.webp';
 ---
 
 <Layout
@@ -19,23 +18,9 @@ import portraitImage from '../assets/images/maria.webp';
 				<p class="eyebrow">About</p>
 				<div class="hero-layout">
 					<div class="hero-copy">
-						<h1 class="display-title">I design products that make complicated things feel clearer and easier to use.</h1>
+						<h1 class="display-title">I build the operational infrastructure and systems that make organizations work.</h1>
 						<p class="hero-text">
-							I'm Maria, a UX designer focused on turning dense workflows, fuzzy product
-							requirements, and overloaded interfaces into experiences people can navigate
-							with confidence.
 						</p>
-					</div>
-					<div class="hero-portrait-wrap">
-						<Image
-							class="hero-portrait"
-							src={portraitImage}
-							alt="Portrait of Maria"
-							loading="eager"
-							decoding="async"
-							widths={[320, 480, 640]}
-							sizes="(max-width: 980px) 100vw, 32vw"
-						/>
 					</div>
 				</div>
 			</section>
@@ -46,51 +31,32 @@ import portraitImage from '../assets/images/maria.webp';
 				</div>
 				<div class="story-block">
 					<p>
-						Over the last 10+ years, I've worked across SaaS, operations, service platforms,
-						and internal tools where the design challenge is rarely just about making something
-						look good. More often, it's about helping people understand what matters, what to
-						do next, and why the product should feel trustworthy in the first place.
+                        Monet King is a Learning Strategist and Process Designer with nearly 18 years of workforce development experience spanning public health, energy, and technology. Her career began at the Association of Public Health Laboratories (APHL) — where she partnered with state, local, and federal health officials and the Centers for Disease Control and Prevention to plan and execute continuing education aimed at building, sustaining, and training the public health laboratory workforce. From there she moved into corporate L&D at FieldCore (GE), Amdocs, and bp — executing and developing programs across power generation, oil and gas, enterprise technology, and global executive leadership. At bp, she served as the operational lead for a 30-session, Houston-based global senior leadership programme and was formally recognized for exceeding performance expectations at the executive level. At Amdocs she drove quality assurance for an enterprise platform spanning 85+ curricula and launched a technical learning program with Google Cloud Platform.
 					</p>
 					<p>
-						I sit somewhere between product thinking, systems design, and interface craft. I
-						care about hierarchy, pacing, micro-decisions, and the kind of details that make
-						an experience feel intentional rather than merely complete.
+                    Her independent work spans career exploration, health literacy curriculum, government contracting documentation, and career strategy. She is the founder of <a href="https://brandbymonet.com/" target="_blank">Brand by Monet</a>, a career strategy and writing studio born from her own experience navigating the job search — and the conviction that a precisely written document can make visible what the job market too often obscures. 
+					</p>
+					<p>
+                        Since 2017, King has helped more than 100 professionals position themselves with clarity and intention.
+					</p>
+					<p>
+                        King holds an M.S. in Health Promotion Management from Marymount University and a B.A. in Journalism from Howard University.
 					</p>
 				</div>
 			</section>
 
 			<section class="editorial-section">
 				<div class="section-rail">
-					<p class="section-kicker">How I Work</p>
+					<p class="section-kicker">Focus Areas</p>
 				</div>
 				<div class="story-block">
-					<p>
-						I work best in the messy middle: when the requirements are incomplete, the product
-						has started to sprawl, and the team needs someone to create clarity without
-						oversimplifying the problem.
-					</p>
-					<p>
-						That usually means stepping back to understand the structure of the experience,
-						deciding what deserves attention first, and then building a visual system strong
-						enough to support that logic all the way through the final UI.
-					</p>
-				</div>
-			</section>
-
-			<section class="editorial-section">
-				<div class="section-rail">
-					<p class="section-kicker">Focus</p>
-				</div>
-				<div class="story-block">
-					<p>
-						I'm especially interested in dashboards, workflow tools, AI-assisted interfaces,
-						and products where reducing friction has a measurable impact on how confident people
-						feel using the system.
-					</p>
-					<p>
-						If something is too dense, too noisy, or too hard to follow, that's usually where I
-						can do my best work.
-					</p>
+					<ul class="outcome-list">
+                        <li>Onboarding systems design</li>
+                        <li>Compliance training infrastructure</li>
+                        <li>Facilitation & instructional design</li>
+                        <li>LMS administration & SOPs</li>
+                        <li>Content Development/Strategy</li>
+                    </ul>
 				</div>
 			</section>
 		</main>
@@ -181,6 +147,22 @@ import portraitImage from '../assets/images/maria.webp';
 		display: grid;
 		gap: 1rem;
 		max-width: 52rem;
+	}
+
+
+	.outcome-list li {
+		font-size: 1.08rem;
+		line-height: 1.7;
+	}
+
+	.outcome-list {
+		margin: 0;
+		padding-left: 1.25rem;
+		list-style: disc;
+	}
+
+	.outcome-list li::marker {
+		color: var(--foreground);
 	}
 
 	@media (max-width: 1100px) {

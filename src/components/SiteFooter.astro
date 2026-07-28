@@ -10,11 +10,10 @@ const currentYear = new Date().getFullYear();
 		{
 			showCta && (
 				<div class="shared-footer-cta">
-					<h2>Got something worth building? I'd love to hear about it.</h2>
-					<p>
-						Check my <a class="shared-footer-inline-link" href="/resume">resume</a> or reach out directly if something here sparked an idea.
-					</p>
-					<a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+					<h2>Whether you're hiring, collaborating, or building something and need an L&D perspective — I'd like to hear about it.</h2>
+                    <p>
+                        <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+                    </p>
 				</div>
 			)
 		}
@@ -40,7 +39,7 @@ const currentYear = new Date().getFullYear();
 						Cookie Preferences
 					</button>
 				</div>
-				<p>&copy; {currentYear} {siteConfig.name}. Sample Astro portfolio theme for presentation purposes.</p>
+				<p>&copy; {currentYear} {siteConfig.name}</p>
 			</div>
 		</div>
 	</div>
