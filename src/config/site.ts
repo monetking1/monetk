@@ -21,7 +21,7 @@ export type SiteConfig = {
     socialLinks: SiteLink[];
 };
 
-const defaultSiteUrl = 'https://writeonlycode.github.io';
+const defaultSiteUrl = 'https://writeonlycode.github.io/monetk/';
 const envSiteUrl = process.env.SITE_URL ?? process.env.PUBLIC_SITE_URL;
 const normalizedSiteUrl = (envSiteUrl || defaultSiteUrl).replace(/\/+$/, '');
 
