@@ -8,6 +8,7 @@ export type SiteConfig = {
     title: string;
     description: string;
     siteUrl: string;
+    siteBase: string;
     email: string;
     locale: string;
     authorName: string;
@@ -20,9 +21,13 @@ export type SiteConfig = {
     socialLinks: SiteLink[];
 };
 
-const defaultSiteUrl = 'https://maria-lake.vercel.app';
+const defaultSiteUrl = 'https://writeonlycode.github.io';
 const envSiteUrl = process.env.SITE_URL ?? process.env.PUBLIC_SITE_URL;
 const normalizedSiteUrl = (envSiteUrl || defaultSiteUrl).replace(/\/+$/, '');
+
+const defaultSiteBase = 'monetk';
+const envSiteBase = process.env.SITE_BASE ?? process.env.PUBLIC_SITE_BASE;
+const normalizedSiteBase = (envSiteBase || defaultSiteBase).replace(/\/+$/, '');
 
 export const siteConfig: SiteConfig = {
     name: 'Monet King',
@@ -31,6 +36,7 @@ export const siteConfig: SiteConfig = {
         'I make complex things clear — through learning design, strategic communication, and the documentation that organizations actually run on.',
     // Set SITE_URL or PUBLIC_SITE_URL to keep canonicals, robots.txt, and the sitemap aligned in each environment.
     siteUrl: normalizedSiteUrl,
+    siteBase: normalizedSiteBase,
     email: 'mk@monetking.com',
     locale: 'en-US',
     authorName: '',
