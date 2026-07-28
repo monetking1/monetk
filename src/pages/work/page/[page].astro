@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../../../layouts/Layout.astro';
 import SiteHeader from '../../../components/SiteHeader.astro';
 import { projects, workPageSize } from '../../../data/projects';
+import { url } from '../../../utils/url';
 
 export function getStaticPaths() {
 	const totalPages = Math.ceil(projects.length / workPageSize);
@@ -55,14 +56,14 @@ const { page, totalPages, visibleProjects } = Astro.props;
 								<p class="work-description">{project.description}</p>
 
 								<div class="actions">
-									<a href={project.href}>
+									<a href={url(project.href)}>
 										<span>View case study</span>
 										<span aria-hidden="true">-&gt;</span>
 									</a>
 								</div>
 							</div>
 
-							<a class="work-visual" href={project.href}>
+							<a class="work-visual" href={url(project.href)}>
 								<Image
 									class={project.imageClass}
 									src={project.image}
@@ -87,7 +88,7 @@ const { page, totalPages, visibleProjects } = Astro.props;
 						return (
 							<a
 								class:list={['pagination-link', page === pageNumber && 'is-current']}
-								href={href}
+								href={url(href)}
 								aria-current={page === pageNumber ? 'page' : undefined}
 							>
 								{pageNumber}

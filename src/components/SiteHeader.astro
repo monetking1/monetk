@@ -16,7 +16,7 @@ import { url } from "../utils/url";
 	<div class="shared-header-actions">
 		<nav class="shared-nav shared-nav-desktop" aria-label="Primary navigation">
 			{siteConfig.navLinks.map((link) => (
-				<a href={link.href} aria-current={link.href === currentPath ? 'page' : undefined}>
+				<a href={url(link.href)} aria-current={link.href === currentPath ? 'page' : undefined}>
 					{link.label}
 				</a>
 			))}
@@ -35,7 +35,7 @@ import { url } from "../utils/url";
                     </button>
                     <div class="shared-menu-panel" id={menuPanelId} role="menu" aria-label="More navigation pages">
                         {siteConfig.extraPages.map((link) => (
-                            <a href={link.href} role="menuitem">
+                            <a href={url(link.href)} role="menuitem">
                                 {link.label}
                             </a>
                         ))}
@@ -104,7 +104,7 @@ import { url } from "../utils/url";
 					{siteConfig.name}
 				</a>
 
-				{siteConfig.navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+				{siteConfig.navLinks.map((link) => <a href={url(link.href)}>{link.label}</a>)}
 
 				<details class="shared-mobile-submenu">
 					<summary
@@ -116,7 +116,7 @@ import { url } from "../utils/url";
                         <img src={url("/icons/chevron-down.svg")} alt="" width="16" height="16" />
 					</summary>
 					<div class="shared-mobile-submenu-panel" id={mobileSubmenuPanelId}>
-						{siteConfig.extraPages.map((link) => <a href={link.href}>{link.label}</a>)}
+						{siteConfig.extraPages.map((link) => <a href={url(link.href)}>{link.label}</a>)}
 					</div>
 				</details>
 
@@ -131,7 +131,7 @@ import { url } from "../utils/url";
 						siteConfig.socialLinks.map((link) => (
 							<a
 								class="shared-mobile-contact-link"
-								href={link.href}
+								href={url(link.href)}
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label={link.label}

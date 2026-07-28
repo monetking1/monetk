@@ -43,7 +43,7 @@ const visibleProjects = projects.slice(0, workPageSize);
 				<div class="projects-grid">
 					{
 						visibleProjects.map((project, index) => (
-							<a class="project-link" href={project.href}>
+							<a class="project-link" href={url(project.href)}>
 								<article class={`project-card ${project.background}`}>
 									<div class="project-header">
 										<p class="project-name">{project.name}</p>
