@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
+import { url } from '../utils/url';
 ---
 
 <Layout
@@ -63,7 +64,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 					</p>
 					<p>
 						For a fuller overview of how consent is stored and how optional categories are meant
-						to be used, see the <a href="/cookies">Cookie Policy</a>.
+                        to be used, see the <a href={url("/cookies")}>Cookie Policy</a>.
 					</p>
 				</section>
 

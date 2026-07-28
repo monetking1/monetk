@@ -8,6 +8,8 @@ import { siteConfig } from '../../config/site';
 
 import featuredImage from '../../assets/images/e2-empowered.png';
 
+import { url } from '../../utils/url';
+
 const highlights = [
 	{ label: 'Client', value: 'E2 EmpowerED' },
 	{ label: 'Completed', value: '2025' },
@@ -83,7 +85,7 @@ const caseStudySchema = [
 		<main id="main-content">
 			<section class="case-hero">
 				<p class="eyebrow">
-					<a class="breadcrumb-link" href="/work">Work</a>
+                    <a class="breadcrumb-link" href={url("/work")}>Work</a>
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
 					<span>E2 EmpowerED</span>
 				</p>

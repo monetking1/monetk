@@ -8,6 +8,8 @@ import { siteConfig } from '../../config/site';
 
 import featuredImage from '../../assets/images/tesla-wfm-sop.avif';
 
+import { url } from '../../utils/url';
+
 const highlights = [
 	{ label: 'Client', value: 'Confidential' },
 	{ label: 'Completed', value: '2026' },
@@ -85,7 +87,7 @@ const caseStudySchema = [
 		<main id="main-content">
 			<section class="case-hero">
 				<p class="eyebrow">
-					<a class="breadcrumb-link" href="/work">Work</a>
+                <a class="breadcrumb-link" href={url("/work")}>Work</a>
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
 					<span>Confidential</span>
 				</p>

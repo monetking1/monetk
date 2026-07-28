@@ -8,6 +8,8 @@ import { siteConfig } from '../../config/site';
 
 import featuredImage from '../../assets/images/forgov-solutions.png';
 
+import { url } from '../../utils/url';
+
 const highlights = [
 	{ label: 'Client', value: 'Forgov Solutions, LLC' },
 	{ label: 'Completed', value: '2024' },
@@ -84,7 +86,7 @@ const caseStudySchema = [
 		<main id="main-content">
 			<section class="case-hero">
 				<p class="eyebrow">
-					<a class="breadcrumb-link" href="/work">Work</a>
+                    <a class="breadcrumb-link" href={url("/work")}>Work</a>
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
 					<span>Forgov Solutions, LLC</span>
 				</p>
