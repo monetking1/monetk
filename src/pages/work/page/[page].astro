@@ -28,8 +28,8 @@ const { page, totalPages, visibleProjects } = Astro.props;
 ---
 
 <Layout
-	title={`Work Page ${page} | Astro Theme for UI/UX Designer Portfolios`}
-	description={`Portfolio pagination example from the Maria Astro theme for UI/UX designer portfolios, showing page ${page} of sample case study listings.`}
+	title={`Work | Monet King`}
+	description="Building the learning systems and operational infrastructure that make organizations and their people more efficient, one document, one strategy, one challenge at a time."
 >
 	<a class="skip-link" href="#main-content">Skip to content</a>
 
@@ -39,11 +39,7 @@ const { page, totalPages, visibleProjects } = Astro.props;
 		<main id="main-content" class="works-main">
 			<header class="works-hero">
 				<p class="works-eyebrow">Selected work</p>
-				<h1>More work in the same system, with room for future case studies to grow into.</h1>
-				<p class="works-intro">
-					Page {page} of {totalPages} keeps the layout consistent while leaving space to expand the
-					archive.
-				</p>
+				<h1>Building the learning systems and operational infrastructure that make organizations and their people more efficient, one document, one strategy, one challenge at a time.</h1>
 			</header>
 
 			<section class="works-list" aria-label="Project list">
@@ -113,7 +109,7 @@ const { page, totalPages, visibleProjects } = Astro.props;
 	}
 
 	.works-hero {
-		max-width: 52rem;
+		max-width: 100%;
 	}
 
 	.works-eyebrow,

@@ -6,23 +6,24 @@ import SiteHeader from '../../components/SiteHeader.astro';
 
 import { siteConfig } from '../../config/site';
 
-import featuredImage from '../../assets/images/the-perfect-pitch.png';
+import featuredImage from '../../assets/images/jerrilyn-black.png';
 import { url } from '../../utils/url';
 
 const highlights = [
-	{ label: 'Client', value: 'Confidential' },
-	{ label: 'Completed', value: '2025' },
-	{ label: 'Role', value: 'Instructional Designer' },
+	{ label: 'Client', value: 'Jerrilyn Black' },
+	{ label: 'Completed', value: '2022' },
+	{ label: 'Role', value: 'Project Manager & Content Strategist' },
 ];
 
 const outcomes = [
-    'A 4-session virtual workshop program (4 hours total) for professionals ages 25–60.',
-    'A full instructional design document with program learning objectives, session-by-session structure, and facilitator framework',
-    'Content sequenced across resume formatting, transferable skills articulation, strategic storytelling, and ATS/AI navigation',
-    'Applied STAR method and professional narrative techniques for an audience with substantial experience to reframe, not just present',
+    'Crafted compassionate, accessible web copy that balanced professionalism with warmth',
+    'Translated clinical expertise into client-friendly language that demystified therapy services',
+    'Developed site architecture prioritizing user experience and clear calls-to-action',
+    'Managed project timeline, budget, and stakeholder communication',
+    'Ensured 508 web compliance for accessibility',
 ];
 
-const caseStudyUrl = new URL('/work/the-perfect-pitch', siteConfig.siteUrl).toString();
+const caseStudyUrl = new URL('/work/jerrilyn-black', siteConfig.siteUrl).toString();
 
 const caseStudySchema = [
 	{
@@ -44,7 +45,7 @@ const caseStudySchema = [
 			{
 				'@type': 'ListItem',
 				position: 3,
-				name: 'The Perfect Pitch',
+				name: 'Jerrilyn Black — Website Project Management & Content Strategy',
 				item: caseStudyUrl,
 			},
 		],
@@ -52,9 +53,9 @@ const caseStudySchema = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'CreativeWork',
-		name: 'The Perfect Pitch',
+		name: 'Jerrilyn Black — Website Project Management & Content Strategy',
 		description:
-            'No centralized system existed to manage new hire onboarding across pre-arrival, orientation, technical training, and 90-day milestones. Process lived in email threads and individual memory — creating gaps in compliance documentation and missed check-ins',
+            'A mental health practitioner needed a digital presence that authentically reflected Black’s therapeutic approach while making services accessible to prospective clients seeking mindful, trauma-informed care.',
 		url: caseStudyUrl,
 		author: {
 			'@type': 'Person',
@@ -71,8 +72,8 @@ const caseStudySchema = [
 ---
 
 <Layout
-	title="The Perfect Pitch — Resume Workshop for Mid-Career Public Health Professionals"
-	description="No centralized system existed to manage new hire onboarding across pre-arrival, orientation, technical training, and 90-day milestones. Process lived in email threads and individual memory — creating gaps in compliance documentation and missed check-ins"
+	title="Website Project Management & Content Strategy"
+	description="A mental health practitioner needed a digital presence that authentically reflected Black’s therapeutic approach while making services accessible to prospective clients seeking mindful, trauma-informed care."
 	ogType="article"
 	ogImageAlt=""
 	schema={caseStudySchema}
@@ -87,9 +88,9 @@ const caseStudySchema = [
 				<p class="eyebrow">
                     <a class="breadcrumb-link" href={url("/work")}>Work</a>
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
-					<span>Confidential</span>
+					<span>Jerrilyn Black</span>
 				</p>
-				<h1 class="display-title">The Perfect Pitch — Resume Workshop for Mid-Career Public Health Professionals</h1>
+				<h1 class="display-title">Website Project Management & Content Strategy</h1>
 			</section>
 
 			<section class="meta-strip" id="overview">
@@ -116,7 +117,16 @@ const caseStudySchema = [
 				<p class="section-kicker">Overview</p>
 				<div class="summary-main">
 					<p>
-                        No centralized system existed to manage new hire onboarding across pre-arrival, orientation, technical training, and 90-day milestones. Process lived in email threads and individual memory — creating gaps in compliance documentation and missed check-ins
+                        A mental health practitioner needed a digital presence that authentically reflected Black’s therapeutic approach while making services accessible to prospective clients seeking mindful, trauma-informed care.
+					</p>
+				</div>
+			</section>
+
+			<section class="summary-section">
+				<p class="section-kicker">My Role</p>
+				<div class="summary-main">
+					<p>
+                        Led end-to-end website development as project manager and content strategist, collaborating with a graphic designer to establish a cohesive brand identity.
 					</p>
 				</div>
 			</section>
@@ -140,7 +150,7 @@ const caseStudySchema = [
 				</div>
 				<div class="story-block">
 					<p class="closing-text">
-                        Instructional Design · Career Development · Workshop Facilitation · Public Health · ATS / AI Literacy
+                        Web Content Strategy · Project Management · Copywriting · Brand Identity · 508 Compliance
 					</p>
 				</div>
 			</section>
