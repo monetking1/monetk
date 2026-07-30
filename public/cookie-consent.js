@@ -148,7 +148,7 @@
           <div class="mcc-banner-copy">
             <p class="mcc-banner-text">
               This site can store essential preference data and, if you choose, optional analytics or marketing consent settings.
-              <a href="${url('/cookies')}" class="mcc-link">Cookie Policy</a >
+              <a href="/cookies" class="mcc-link">Cookie Policy</a >
             <button class="mcc-manage-link" id="mcc-manage" type="button">Manage Preferences</button>
             </p >
           </div >
