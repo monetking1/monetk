@@ -45,6 +45,7 @@ export const siteConfig: SiteConfig = {
     ogImage: '/og-image.svg',
     navLinks: [
         { href: '/work', label: 'Work' },
+        { href: '/capabilities', label: 'Capabilities' },
         { href: '/about', label: 'About' },
         { href: '/resume', label: 'Resume' },
     ],
@@ -63,6 +64,6 @@ export const siteConfig: SiteConfig = {
         { href: '/terms', label: 'Terms' },
     ],
     socialLinks: [
-        { href: 'https://www.linkedin.com/', label: 'LinkedIn' },
+        { href: 'https://www.linkedin.com/in/monetking/', label: 'LinkedIn' },
     ],
 };

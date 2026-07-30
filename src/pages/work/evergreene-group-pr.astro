@@ -16,7 +16,14 @@ const highlights = [
 	{ label: 'Role', value: 'Editorial Consultant' },
 ];
 
-const outcomes: string[] = [];
+const outcomes: string[] = [
+    "Conducted thorough line-by-line proofreading for grammar, punctuation, and consistency",
+    "Refined language for clarity and readability while preserving the author's authentic voice",
+    "Ensured consistency in formatting, terminology, and style throughout the 24-page guide",
+    "Reviewed technical accuracy of PR industry terminology and best practices",
+    "Polished professional tone appropriate for an educational business resource",
+    "Provided detailed feedback on structure, flow, and customer-facing presentation",
+];
 
 const caseStudyUrl = new URL('/work/evergreene-group-pr', siteConfig.siteUrl).toString();
 
@@ -40,7 +47,7 @@ const caseStudySchema = [
 			{
 				'@type': 'ListItem',
 				position: 3,
-				name: 'Evergreene Group PR — E-Book Editorial Review',
+				name: 'E-Book Editorial Review & Content Refinement',
 				item: caseStudyUrl,
 			},
 		],
@@ -48,7 +55,7 @@ const caseStudySchema = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'CreativeWork',
-		name: 'Evergreene Group PR — E-Book Editorial Review',
+		name: 'E-Book Editorial Review & Content Refinement',
 		description:
             'A PR professional needed comprehensive editing and proofreading services to prepare a digital e-book for commercial publication and customer purchase. The deliverable — Press for Champagne, a comprehensive digital resource for DIY restaurant PR by Ashley Mason-Greene, Founder of Evergreene Group PR — had to meet professional publishing standards while preserving the author\'s voice and delivering clear, actionable content for restaurant entrepreneurs.',
 		url: caseStudyUrl,
@@ -67,7 +74,7 @@ const caseStudySchema = [
 ---
 
 <Layout
-	title="Evergreene Group PR — E-Book Editorial Review"
+	title="E-Book Editorial Review & Content Refinement"
 	description="A PR professional needed comprehensive editing and proofreading services to prepare a digital e-book for commercial publication and customer purchase. The deliverable — Press for Champagne, a comprehensive digital resource for DIY restaurant PR by Ashley Mason-Greene, Founder of Evergreene Group PR — had to meet professional publishing standards while preserving the author's voice and delivering clear, actionable content for restaurant entrepreneurs."
 	ogType="article"
 	ogImageAlt=""
@@ -85,7 +92,7 @@ const caseStudySchema = [
 					<span class="breadcrumb-separator" aria-hidden="true">/</span>
 					<span>Evergreene Group PR</span>
 				</p>
-				<h1 class="display-title">Evergreene Group PR — E-Book Editorial Review</h1>
+				<h1 class="display-title">E-Book Editorial Review & Content Refinement</h1>
 			</section>
 
 			<section class="meta-strip" id="overview">
@@ -112,7 +119,30 @@ const caseStudySchema = [
 				<p class="section-kicker">Overview</p>
 				<div class="summary-main">
 					<p>
-                        No centralized system existed to manage new hire onboarding across pre-arrival, orientation, technical training, and 90-day milestones. Process lived in email threads and individual memory — creating gaps in compliance documentation and missed check-ins
+                        A PR professional needed comprehensive editing and proofreading services to prepare a digital e-book for commercial publication and customer purchase. The deliverable — Press for Champagne, a comprehensive digital resource for DIY restaurant PR by Ashley Mason-Greene, Founder of Evergreene Group PR — had to meet professional publishing standards while preserving the author's voice and delivering clear, actionable content for restaurant entrepreneurs.
+					</p>
+				</div>
+			</section>
+
+            <section class="editorial-section" id="outcomes">
+				<div class="section-rail">
+					<p class="section-kicker">What I Built</p>
+				</div>
+
+				<div class="story-block">
+					<ul class="outcome-list">
+						{outcomes.map((item) => <li>{item}</li>)}
+					</ul>
+				</div>
+			</section>
+
+			<section class="editorial-section" id="skills">
+				<div class="section-rail">
+					<p class="section-kicker">Skills</p>
+				</div>
+				<div class="story-block">
+					<p class="closing-text">
+                        Editorial Review · Proofreading · Content Refinement · Publishing Standards · Technical Accuracy
 					</p>
 				</div>
 			</section>

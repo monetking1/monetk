@@ -97,7 +97,7 @@ export const projects: Project[] = [
     },
     {
         name: 'To build a succession pipeline where none existed',
-        title: 'Manager Training (GMT) Program',
+        title: 'Manager Training Program',
         description: 'The company had no internal pipeline for Manager succession. When leadership vacancies arose, the organization defaulted to reactive external hiring. ',
         background: 'lime',
         variant: 'desktop',
