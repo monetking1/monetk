@@ -21,11 +21,11 @@ export type SiteConfig = {
     socialLinks: SiteLink[];
 };
 
-const defaultSiteUrl = 'https://writeonlycode.github.io';
+const defaultSiteUrl = 'https://monetking.com';
 const envSiteUrl = process.env.SITE_URL ?? process.env.PUBLIC_SITE_URL;
 const normalizedSiteUrl = (envSiteUrl || defaultSiteUrl).replace(/\/+$/, '');
 
-const defaultSiteBase = 'monetk';
+const defaultSiteBase = '/';
 const envSiteBase = process.env.SITE_BASE ?? process.env.PUBLIC_SITE_BASE;
 const normalizedSiteBase = (envSiteBase || defaultSiteBase).replace(/\/+$/, '');
 
