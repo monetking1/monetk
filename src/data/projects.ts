@@ -26,7 +26,7 @@ export type Project = {
     imageClass: string;
 };
 
-export const workPageSize = 5;
+export const workPageSize = 4;
 
 export const projects: Project[] = [
     {
